@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lanec\\Desktop\\WPFUdemy\\CalculatorApp\\CalculatorApp.csproj",
+      "projectUniqueName": "C:\\Users\\Lanec\\Desktop\\WPFUdemy\\WPFCalculatorApp\\CalculatorApp\\CalculatorApp.csproj",
       "projectName": "CalculatorApp",
-      "projectPath": "C:\\Users\\Lanec\\Desktop\\WPFUdemy\\CalculatorApp\\CalculatorApp.csproj",
+      "projectPath": "C:\\Users\\Lanec\\Desktop\\WPFUdemy\\WPFCalculatorApp\\CalculatorApp\\CalculatorApp.csproj",
       "packagesPath": "C:\\Users\\Lanec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lanec\\Desktop\\WPFUdemy\\CalculatorApp\\obj\\",
+      "outputPath": "C:\\Users\\Lanec\\Desktop\\WPFUdemy\\WPFCalculatorApp\\CalculatorApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

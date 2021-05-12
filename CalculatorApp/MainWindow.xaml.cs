@@ -20,13 +20,14 @@ namespace CalculatorApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        double lastNum, result;
-        SelectedOperator selectOperator;
+        double lastNum, result; //Hold result
+        SelectedOperator selectOperator; 
 
         public MainWindow()
         {
             InitializeComponent();
 
+            //Initialize buttons
             btnAc.Click += BtnAc_Click;
             btnNegative.Click += BtnNegative_Click;
             btnPercent.Click += BtnPercent_Click;
@@ -39,7 +40,7 @@ namespace CalculatorApp
 
             if (double.TryParse(lblResult.Content.ToString(), out newNum))
             {
-                switch(selectOperator)
+                switch(selectOperator) //Switch statement to pick which math operation to perform
                 {
                     case SelectedOperator.Addition:
                         result = MathOperation.Add(lastNum, newNum);
@@ -62,7 +63,7 @@ namespace CalculatorApp
 
         private void BtnPercent_Click(object sender, RoutedEventArgs e)
         {
-            double temp;
+            double temp; // To hold num for percent
 
             if (double.TryParse(lblResult.Content.ToString(), out temp))
             {
@@ -96,6 +97,8 @@ namespace CalculatorApp
         private void BtnAc_Click(object sender, RoutedEventArgs e)
         {
             lblResult.Content = "0";
+            result = 0;
+            lastNum = 0;
         }
 
         private void OperatorBtn_Click(object sender, RoutedEventArgs e)
@@ -103,10 +106,9 @@ namespace CalculatorApp
             if (double.TryParse(lblResult.Content.ToString(), out lastNum))
             {
                 lblResult.Content = "0";
-                result = 0;
-                lastNum = 0;
             }
 
+            //Picks which operation and sets selectOperator
             if (sender == btnMultiply)
                 selectOperator = SelectedOperator.Multiplication;
             if (sender == btnDivide)
